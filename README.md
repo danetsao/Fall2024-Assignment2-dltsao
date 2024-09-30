@@ -9,3 +9,5 @@ This project implements the Bing Search API to query results and display them on
 The site is deployed using **Azure App Service** and can be accessed at the following URL:
 
 https://fall2024-assignment2-dltsao.azurewebsites.net
+
+The API key is stored in the `Azure Applications Settings` and is queried via `GetEnvironmentVariable` in `HomeController`. This function is then called in our ajax script in `script.js`.
