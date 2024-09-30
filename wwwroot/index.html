@@ -2,11 +2,30 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"
+        integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css"
+        integrity="sha256-wpw0WVB1ZY1ZdkFKI0BKnEu77yTcI3lwVRNj3LCzUr4=" crossorigin="anonymous">
+    <title>Dane's Search Engine</title>
 </head>
 
 <body>
-    <script type="text/javascript" src="./script.js"></script>
+    <header>
+        <h1 id="searchEngineName">Dane's Search Engine</h1>
+    </header>
+
+    <input type="text" id="query" placeholder="Enter your search engine query...">
+    <button id="searchButton">Search</button>
+    <button id="timeButton">Current Time</button>
+    <button id="luckyButton">I'm Feeling Lucky</button>
+
+    <div id="searchResults"></div>
+    <div id="time"></div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>

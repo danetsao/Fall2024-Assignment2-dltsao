@@ -23,6 +23,21 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpGet("/api/get-bing-api-key")]
+    public IActionResult GetBingApiKey()
+    {
+        var apiKey = Environment.GetEnvironmentVariable("BING_SEARCH_API_KEY");
+
+        if (!string.IsNullOrEmpty(apiKey))
+        {
+            return Json(new { apiKey });
+        }
+        else
+        {
+            return Json(new { error = "API key not found" });
+        }
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
