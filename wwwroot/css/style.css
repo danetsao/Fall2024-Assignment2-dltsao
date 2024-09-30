@@ -4,6 +4,15 @@ body {
   font-family: 'Arial', sans-serif;
   text-align: center;
   color: #e0f7fa;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers buttons */
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 header h1 {
