@@ -8,4 +8,4 @@ This project implements the Bing Search API to query results and display them on
 
 The site is deployed using **Azure App Service** and can be accessed at the following URL:
 
-[future link](#)
+[https://fall2024-assignment2-dltsao.azurewebsites.net](#)
